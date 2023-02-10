@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		
+		#backdrop {
+			background-color: rgba(0, 0, 0, 0.276);
+			position: fixed;
+			inset: 0;
+		}
+		.modal-content {
+			background-color: rgb(255, 167, 167);
+			width: 50vw;
+			height: 50vh;
+			position: fixed;
+			top: 30%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+		}
+
+		
+		#card-img:not(:checked)~.modal-card {
+			display: none;
+		}
+	</style>
+</head>
+<body>
+	<input type="checkbox" id="card-img" >
+	<button>
+		<label for="card-img" class="icon">
+			<img src="./img/check.png" alt="">
+		</label>
+	</button>
+	<div class="modal-card">
+		<label for="card-img" id="backdrop"></label>
+		<div class="modal-content">
+			<p>Lorem ipsum dolor sit amet</p>
+			<p>Lorem ipsum dolor sit amet</p>
+			<p>Lorem ipsum dolor sit amet</p>
+			<p>Lorem ipsum dolor sit amet</p>
+		</div>
+	</div>
+</body>
+</html>

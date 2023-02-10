@@ -1,0 +1,22 @@
+.products
+	h2.products__title
+	ul.products__cards
+		li.products__card .product * 8
+			a.product__content
+				img.product__photo
+				b.product__badge (--sale, --new)
+				h4.product__title
+				p.product__text
+				.product__prices
+					strong.product__price
+					s.product__full-price
+			.product__overlay
+				button.product__buy-button
+				button.product__share-button
+				button.product__like-button
+
+	button.products__more-button
+
+
+
+	
